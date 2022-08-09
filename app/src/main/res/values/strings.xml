@@ -4,4 +4,7 @@
     <string name="adjust_start_end_time">Adjust start/end time</string>
     <string name="default_workout_name">Workout</string>
     <string name="workout_options">Workout options</string>
+    <string name="default_timer_time">0:00</string>
+    <string name="add_exercise">ADD EXERCISE</string>
+    <string name="cancel_workout">CANCEL WORKOUT</string>
 </resources>
