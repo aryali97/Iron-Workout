@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Iron Workout</string>
+    <string name="edit_workout_name">Edit workout name</string>
+    <string name="adjust_start_end_time">Adjust start/end time</string>
+    <string name="default_workout_name">Workout</string>
+    <string name="workout_options">Workout options</string>
 </resources>
