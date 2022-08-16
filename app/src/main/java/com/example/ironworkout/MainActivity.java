@@ -5,13 +5,18 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.PopupMenu;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
+
+    private EditText workoutNameEditText;
 
     private int workoutSeconds = 0;
     private boolean workoutStopWatchRunning;
@@ -21,8 +26,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        workoutNameEditText = findViewById(R.id.workout_name_edittext);
+
         workoutStopWatchRunning = true;
         runWorkoutTimer();
+    }
+
+    public void setWorkoutNameEditText(MenuItem item) {
+        workoutNameEditText.selectAll();
     }
 
     public void showWorkoutMenu(View view) {

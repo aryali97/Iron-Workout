@@ -27,10 +27,15 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <TextView
+            <EditText
+                android:id="@+id/workout_name_edittext"
+                android:hint="@string/edit_workout_name"
+                android:inputType="text"
+                android:importantForAutofill="no"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="5dp"
+                android:background="@android:color/transparent"
                 android:text="@string/default_workout_name"
                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                 android:textStyle="bold" />
